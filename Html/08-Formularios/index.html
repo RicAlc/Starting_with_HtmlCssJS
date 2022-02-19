@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <form>
+      <fieldset>
+      <legend>Datos personales</legend>
+      <div class="">
+    <!-- Tipo texto -->
+    <!-- Required para hacer obligatorio el campo obligatorio -->
+      <label>Nombre
+      <input type="text" id="useranme" name="username" required>
+      </label>
+      </div>
+      <div>
+    <!-- placeholder para poner un texto dentro del recuadro -->
+      <input name="username" placeholder="Nombre de usuario">
+      </div>
+      <div>
+    <!-- Tipo correo -->
+      <label>Correo
+      <input type="email" >
+      </label>
+      </div>
+      </fieldset>
+      <fieldset>
+      <legend>Otros datos</legend>
+      <div>
+      <label>Contraseña
+    <!-- Tipo contraseña -->
+      <input type="password" id="pass"name="password" required>
+      </label>
+      </div>
+      <div>
+    <!-- Readonly solo para lectura -->
+        <label for="quantity">Cantidad de piezas
+          <input type="text" name="quantity" value="5"readonly>
+        </label>
+      </div>
+      <div>
+    <!-- Tipo Fecha -->
+      <label>Fecha de nacimiento
+      <input type="date" name="password">
+      </label>
+      </div>
+      </fieldset>
+    <!-- Escoger MLTIPLES opciones -->
+      <fieldset>
+        <legend>Tus pasatiempos</legend>
+        <label for="hobby1">
+        <input type="checkbox" name="hobby1" value="">Deporte
+        </label>
+        <label for="hobby2">
+        <input type="checkbox" name="hobby2" value="">Videjuegos
+        </label>
+        <label for="hobby3">
+        <input type="checkbox" name="hobby3" value="">Música
+        </label>
+      </fieldset>
+    <!-- Escoger una sola opcion -->
+      <fieldset>
+        <legend>Genero</legend>
+        <label for="gender"><input type="radio" name="gender" value="">Hombre</label>
+        <label for="gender"><input type="radio" name="gender" value="">Mujer</label>
+        <label for="gender"><input type="radio" name="gender" value="">Prefiero no especificar</label>
+      </fieldset>
+      <fieldset>
+        <legend>Paises</legend>
+        <div >
+        <label for="country">Selecciona tu país
+        <select id="country" name="country">
+    <!-- Tipo lista de opciones -->
+          <optgroup label="América">
+            <option value="mx">México</option>
+            <option value="pe">Perú</option>
+            <option value="co">Colombia</option>
+          </optgroup>
+          <optgroup label="Europa">
+            <option value="es">España</option>
+            <option value="it">Italia</option>
+            <option value="uk">Reino Unido</option>
+          </optgroup>
+        </select>
+      </label>
+        </div>
+    <!-- Tipo area de textp -->
+      <textarea name="comentario" rows="8" cols="80"placeholder="Deja un comentario"></textarea>
+      </fieldset>
+      <input type="submit" value="Iniciar sersion">
+      <button type="button" id="ver" name="button">ver</button>
+    </form>
+
+    <script type="text/javascript">
+      document.getElementById("useranme").addEventListener("mousedown", e=>{
+      useranme.value= "";
+      })
+      document.getElementById("ver").addEventListener("mousedown", e2=>{
+      pass.type="text";
+      })
+    </script>
+  </body>
+</html>

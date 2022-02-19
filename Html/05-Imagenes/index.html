@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Imagenes</title>
+  </head>
+  <body>
+  <h1>IMAGENES</h1>
+  <!-- <img src="./img/fitness.jpg"
+      srcset="./img/puppy.jpg 800w,
+              ./img/gaming.jpg 500w"> -->
+  <picture>
+    <source srcset="./img/puppy.jpg" media="(min-width: 800px)">
+    <source srcset="./img/gaming.jpg" media="(min-width: 500px)">
+    <img src="./img/fitness.jpg" alt="Hombre trepando una cuerda">
+  </picture>
+  </body>
+</html>

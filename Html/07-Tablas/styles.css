@@ -1,0 +1,22 @@
+table{
+  border-collapse: collapse;
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+td{
+  border: 2px solid #000;
+}
+th{
+  background: rgb(25, 82, 119);
+  color: #fff;
+}
+
+td, th{
+  text-align: center;
+  padding: 1em;
+  
+}
+col{
+  background: rgb(199, 222, 248);
+
+}

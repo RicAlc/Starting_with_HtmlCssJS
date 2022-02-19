@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contenido interactivo</title>
+  </head>
+  <body>
+    <dialog id= "modal">
+      <button type="button" name="button2" id="cerrar">Cerrar</button>
+      <h2>Desarrollo web</h2>
+      <p>Html 5, Css, Js</p>
+      <p>Frontend, Backend</p>
+    </dialog>
+    <button type="button" name="button" id="button">Abrir modal</button>
+    <h1>Interactividad y contenido embebido</h1>
+
+    <details>
+      <summary>HTML</summary>
+      <p>Lenguaje de etiquetado de hipertexto</p>
+      <p>Se creo en 1989</p>
+    </details>
+    <h2>Contenido Embebido</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3ad4NsEy1tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Mapa</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59612.70916047305!2d-89.59653646342767!3d20.960773322687743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715334a60779%3A0x770c2989366a0b5f!2sCatedral%20de%20M%C3%A9rida%20-%20San%20Ildefonso!5e0!3m2!1ses-419!2smx!4v1595989646880!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <script type="text/javascript">
+    const mod= document.getElementById("modal");
+    const close = document.getElementById("cerrar");
+    const open = document.getElementById("button");
+    open.addEventListener("click", ()=>{
+      mod.setAttribute("open", "true");
+    })
+    close.addEventListener("click", ()=>{
+      mod.removeAttribute("open");
+
+    })
+  </script>
+  </body>
+</html>
