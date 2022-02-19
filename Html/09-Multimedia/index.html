@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <h1>Videos y sonidos</h1>
+    <video src="./media/billie.mp4"   poster="./img/billie.jpg" id= "video">
+    </video>
+      <button type="button" id= "pause" name="pause">Pause</button>
+      <button type="button" id= "stop" name="stop">stop</button>
+  <script type="text/javascript">
+    var pandp=true;
+    const video = document.getElementById("video");
+    const play = document.getElementById("play");
+    const pause = document.getElementById("pause");
+    const stop = document.getElementById("stop");
+
+
+    pause.addEventListener("click", () =>{
+    if(pandp){
+    video.pause();
+    pandp= false;
+    document.pause.value="play";
+    pause.value  = "play"
+  }
+  else{
+    video.play();
+    pandp=true;
+    document.pause.value="pause";s
+  }
+})
+    stop.addEventListener("click", () =>{
+    video.pause();
+    video.currentTime=0;
+})
+  </script>
+  </body>
+</html>
